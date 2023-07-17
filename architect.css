@@ -2,4 +2,111 @@
 *{
     font-family: 'Roboto', sans-serif;
 font-family: 'Work Sans', sans-serif;
+margin: 0;
+padding: 0;
+}
+header{
+    background: #ff900e1a;
+    padding: 40px 240px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ul{
+    color: var(--dark-02, #424242);
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 13px;
+    font-weight: 500;
+    list-style: none;
+    display: flex;
+}
+li{
+    padding: 20px;
+    list-style: none;
+}
+nav li a{
+    text-decoration: none;
+}
+.g3{
+    color: var(--dark-01, #131313);
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+
+/* banner style */
+.banner{
+    max-width: 800px;
+    text-align: center;
+    margin: auto;
+    padding: 105px 130px 92px 130px;
+}
+.banner-taitle{
+    color: var(--dark-01, #131313);
+text-align: center;
+font-family: Work Sans;
+font-size: 54px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.banner-description{
+    color: var(--dark-03, #727272);
+text-align: center;
+font-family: Work Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px;
+margin: 20px;
+}
+.btn-primary{
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+text-align: center;
+font-family: Work Sans;
+/* font-size: 20px; */
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+border: none;
+padding: 15px 10px;
+}
+.banner-pic{
+    width: 100%;
+    height: 80vh;
+}
+.banner-img{
+    width: 100%;
+    height: 600px;
+    border-radius: 8px;
+    background: url(<path-to-image>), lightgray 0px -94.291px / 100% 137.109% no-repeat;
+}
+/* responsive media queries */
+/* mobile devices */
+
+@media screen and (max-width:576px) {
+    header{
+        padding: 5px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+
+/* tablet or medium */
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    nav{
+        flex-direction: column;
+    }    
+    header{
+        padding: 20px;
+    }
 }
